@@ -19,7 +19,7 @@ export const navLinks = [
   }
 ];
 
-export const footerInfoItems = [
+export const info = [
   {
     label: 'Today 10:00 am - 7:00 pm',
     icon: FaClock,

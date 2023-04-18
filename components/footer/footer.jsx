@@ -2,6 +2,7 @@ import Logo from '../ui/logo/logo';
 
 import { footerInfoItems } from '@/data';
 import styles from './footer.module.scss';
+import Info from '../ui/info/info';
 
 const renderElement = (type, value) => {
   switch (type) {
@@ -39,13 +40,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <ul className={styles.top}>
-          {footerInfoItems.map((item) => (
-            <li key={item.id} className={styles.item}>
-              <FooterInfoItem item={item} />
-            </li>
-          ))}
-        </ul>
+        <Info />
       </div>
       <div className={styles.divider} />
       <div className={styles.container}>

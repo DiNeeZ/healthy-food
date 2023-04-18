@@ -1,0 +1,40 @@
+@import '../../../styles/mixins.scss';
+
+.info {
+  @include list-reset;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+
+  .icon {
+    fill: rgba($secondary-color, 0.5);
+  }
+
+  .label {
+    margin: 0;
+    color: $secondary-color;
+    font-style: normal;
+    line-height: 1.25rem;
+  }
+
+  small {
+    line-height: 1.25rem;
+    color: rgba($secondary-color, 0.5);
+  }
+}
+
+@include mobile {
+  .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
