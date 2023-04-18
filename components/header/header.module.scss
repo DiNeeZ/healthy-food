@@ -1,0 +1,15 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  padding: 2rem 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba($secondary-color, 0.1);
+}
+
+.container {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

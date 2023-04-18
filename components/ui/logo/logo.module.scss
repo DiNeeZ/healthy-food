@@ -1,0 +1,17 @@
+@import '../../../styles/mixins.scss';
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.text {
+  transform: translateY(0.25rem);
+}
+
+@include mobile {
+  .text {
+    display: none;
+  }
+}

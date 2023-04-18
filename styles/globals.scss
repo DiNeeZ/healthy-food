@@ -1,0 +1,38 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+  color: $secondary-color;
+  background-color: $black-color;
+  scroll-behavior: smooth;
+
+  &.dis-scroll {
+    @include dis-scroll;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
