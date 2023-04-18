@@ -1,0 +1,13 @@
+@import "../../../styles/vars.scss";
+
+.button {
+  padding: 1.5rem 3.75rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: $black-color;
+  background-color: $primary-color;
+  border-radius: 2.6875rem;
+}

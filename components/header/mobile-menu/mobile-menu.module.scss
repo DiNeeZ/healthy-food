@@ -1,5 +1,5 @@
-@import '../../../styles/vars.scss';
-@import '../../../styles/mixins.scss';
+@import "../../../styles/vars.scss";
+@import "../../../styles/mixins.scss";
 
 .menu {
   display: none;
@@ -15,8 +15,8 @@
   gap: 2rem;
   inset: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba($black-color, 0.8);
+  height: 100vh;
+  background-color: rgba($black-color, 0.9);
   transform: translateX(-100%);
   visibility: hidden;
   transition: transform 0.3s ease-in-out;

@@ -1,14 +1,15 @@
-@import '../../../styles/mixins.scss';
+@import "../../../styles/mixins.scss";
 
 .info {
   @include list-reset;
   padding-bottom: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
 .item {
+  width: 245px;
   display: flex;
   flex-direction: column;
   align-items: center;
