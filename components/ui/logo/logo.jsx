@@ -5,7 +5,7 @@ import styles from './logo.module.scss';
 
 const Logo = () => {
   return (
-    <Link href='/' className={styles.logo}>
+    <Link href='#' className={styles.logo}>
       <Image src='/logo.svg' width={25} height={24} alt='logo' className={styles.icon} />
       <Image
         src='/logo-text.svg'

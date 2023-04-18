@@ -1,0 +1,66 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+  padding: 2rem 0;
+  background-color: $dark-gray-color;
+}
+
+.container {
+  @include container;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba($secondary-color, 0.1);
+}
+
+.top {
+  @include list-reset;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+
+  .label {
+    margin: 0;
+    color: $secondary-color;
+    font-style: normal;
+    line-height: 1.25rem;
+  }
+
+  small {
+    line-height: 1.25rem;
+    color: rgba($secondary-color, 0.5);
+  }
+}
+
+.bottom {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: $light-gray-color;
+  text-align: center;
+}
+
+@include mobile {
+  .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
