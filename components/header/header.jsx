@@ -1,8 +1,8 @@
-import Logo from '../ui/logo/logo';
-import Navbar from './navbar/navbar';
+import { Logo } from '../ui/logo';
+import { Navbar } from './navbar';
+import { MobileMenu } from './mobile-menu';
 
 import styles from './header.module.scss';
-import MobileMenu from './mobile-menu/mobile-menu';
 
 const Header = () => {
   return (

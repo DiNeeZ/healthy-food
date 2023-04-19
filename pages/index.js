@@ -1,8 +1,14 @@
 import Head from 'next/head';
 
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
-import Hero from '@/components/hero/hero';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
+import { Hero } from '@/components/hero';
+import { About } from '@/components/about';
+import { Work } from '@/components/work';
+import { Dishes } from '@/components/dishes';
+import { Chefs } from '@/components/chefs';
+import { Recipes } from '@/components/recipes';
+import { Social } from '@/components/social';
 
 export default function Home() {
   return (
@@ -16,6 +22,12 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <About />
+        <Work />
+        <Dishes />
+        <Chefs />
+        <Recipes />
+        <Social />
       </main>
       <Footer />
     </>

@@ -1,8 +1,6 @@
-import Logo from '../ui/logo/logo';
-
-import { footerInfoItems } from '@/data';
+import { Logo } from '../ui/logo';
+import { Info } from '../ui/info';
 import styles from './footer.module.scss';
-import Info from '../ui/info/info';
 
 const renderElement = (type, value) => {
   switch (type) {

@@ -27,6 +27,13 @@ body {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 7.5rem;
+}
+
 img {
   height: auto;
   max-width: 100%;

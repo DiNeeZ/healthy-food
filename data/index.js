@@ -42,3 +42,30 @@ export const info = [
     type: 'tel'
   }
 ];
+
+export const slider = [
+  {
+    id: 'slider-image-1',
+    src: '/images/slider-1.jpg'
+  },
+  {
+    id: 'slider-image-2',
+    src: '/images/slider-2.jpg'
+  },
+  {
+    id: 'slider-image-3',
+    src: '/images/slider-3.jpg'
+  },
+  {
+    id: 'slider-image-4',
+    src: '/images/slider-4.jpg'
+  },
+  {
+    id: 'slider-image-5',
+    src: '/images/slider-5.jpg'
+  },
+  {
+    id: 'slider-image-6',
+    src: '/images/slider-6.jpg'
+  }
+];

@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-
-import Burger from '@/components/ui/burger/burger';
 import Link from 'next/link';
 
+import { Burger } from '@/components/ui/burger';
 import { navLinks } from '@/data';
 import styles from './mobile-menu.module.scss';
 

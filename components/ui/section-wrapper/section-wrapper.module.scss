@@ -1,0 +1,91 @@
+@import '../../../styles/vars.scss';
+@import '../../../styles/mixins.scss';
+
+.topover {
+  .container {
+    background-color: $dark-gray-color;
+    border-radius: 0.375rem;
+  }
+}
+
+.container {
+  @include container;
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: $primary-color;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-size: 2.25rem;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  color: #d9d9d9;
+  z-index: 2;
+}
+
+.subtitle {
+  position: relative;
+  margin: 0;
+  padding: 1.875rem 0;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  font-size: 6.25rem;
+  line-height: 1;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+@include for-desktop {
+  .topover {
+    position: relative;
+    z-index: 10;
+    margin-top: -240px;
+  }
+}
+
+@include small-tablet {
+  .title {
+    font-size: 2rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 5rem;
+  }
+}
+
+@include small-tablet {
+  .title {
+    font-size: 1.25rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 2.75rem;
+  }
+}
