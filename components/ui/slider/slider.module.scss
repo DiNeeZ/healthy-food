@@ -1,10 +1,75 @@
-.slider {
+@import '../../../styles/vars.scss';
+@import '../../../styles/mixins.scss';
+
+.sliderWrapper {
+  width: 100%;
   position: relative;
+}
+
+.slider {
   max-width: 734px;
 }
 
-// .button {
-//   position: absolute;
-//   top: 0;
-//   left: -200px;
-// }
+.slideImage {
+  object-fit: cover;
+}
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.button {
+  @include btn-reset;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+  outline: none;
+
+  &:focus-visible {
+    color: $light-gray-color;
+    border-color: $light-gray-color;
+    background-color: rgba(#303030, 0.2);
+  }
+
+  @include hover {
+    &:hover {
+      background-color: rgba(#303030, 0.2);
+    }
+  }
+}
+
+@include tablet {
+  .navigation {
+    position: static;
+    width: auto;
+    top: 0;
+    transform: translateY(0);
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: -3rem;
+  }
+}
+
+@include mobile {
+  .navigation {
+    margin-top: 1rem;
+    margin-bottom: -4rem;
+
+    gap: 2rem;
+  }
+}

@@ -18,9 +18,7 @@ const About = () => {
           consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse
           aliquip.
         </p>
-        <div className={styles.slider}>
-          <Slider slides={slider} />
-        </div>
+        <Slider slides={slider} />
       </div>
     </SectionWrapper>
   );
