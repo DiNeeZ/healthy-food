@@ -69,3 +69,26 @@ export const slider = [
     src: '/images/slider-6.jpg'
   }
 ];
+
+export const workflow = [
+  {
+    id: 'pick-meals',
+    label: 'Pick Meals',
+    text: 'Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.'
+  },
+  {
+    id: 'choose-how-often',
+    label: 'Choose How Often',
+    text: 'Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!'
+  },
+  {
+    id: 'fast-deliveries',
+    label: 'Fast Deliveries',
+    text: 'Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.'
+  },
+  {
+    id: 'tasty-meals',
+    label: 'Tasty Meals',
+    text: 'Gobble makes cooking fast, so you have more time to unwind and be with family.'
+  }
+];
