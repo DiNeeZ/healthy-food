@@ -1,10 +1,12 @@
-import Link from 'next/link'
-import styles from './button.module.scss'
+import Link from 'next/link';
+import styles from './button.module.scss';
 
-const Button = ({ children, href }) => {
+const Button = ({ children, href, xl }) => {
   return (
-    <Link href={href} className={styles.button}>{children}</Link>
-  )
-}
+    <Link href={href} className={`${styles.button} ${xl && styles.xl}`}>
+      {children}
+    </Link>
+  );
+};
 
-export default Button
+export default Button;

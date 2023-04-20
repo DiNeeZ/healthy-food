@@ -1,0 +1,26 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+
+@include tablet {
+  .dishes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include small-tablet {
+  .dishes {
+    gap: 1rem;
+  }
+}
+
+@include mobile {
+  .dishes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

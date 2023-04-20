@@ -1,0 +1,11 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.star {
+  fill: #f9ad3d;
+  stroke: #f9ad3d;
+  cursor: pointer;
+}

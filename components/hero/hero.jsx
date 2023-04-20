@@ -25,7 +25,9 @@ const Hero = () => {
               you can cook a fresh homemade dinner in just 15 minutes.
             </p>
           </div>
-          <Button href='/'>Order Now</Button>
+          <Button href='/' xl>
+            Order Now
+          </Button>
         </div>
         <div className={styles.info}>
           <Info />

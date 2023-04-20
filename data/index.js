@@ -92,3 +92,90 @@ export const workflow = [
     text: 'Gobble makes cooking fast, so you have more time to unwind and be with family.'
   }
 ];
+
+export const dishes = [
+  {
+    id: 'dish-1',
+    imgUrl: '/images/dish-1.jpg',
+    label: 'Featured Meal',
+    details: 'Served with french fries + drink',
+    choice:
+      'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...',
+    rating: 5,
+    link: '/'
+  },
+  {
+    id: 'dish-2',
+    imgUrl: '/images/dish-2.jpg',
+    label: 'Featured Meal',
+    details: 'Served with french fries + drink',
+    choice:
+      'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...',
+    rating: 4,
+    link: '/'
+  },
+  {
+    id: 'dish-3',
+    imgUrl: '/images/dish-3.jpg',
+    label: 'Featured Meal',
+    details: 'Served with french fries + drink',
+    choice:
+      'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...',
+    rating: 4.5,
+    link: '/'
+  },
+  {
+    id: 'dish-4',
+    imgUrl: '/images/dish-4.jpg',
+    label: 'Featured Meal',
+    details: 'Served with french fries + drink',
+    choice:
+      'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...',
+    rating: 4.7,
+    link: '/'
+  },
+  {
+    id: 'dish-5',
+    imgUrl: '/images/dish-5.jpg',
+    label: 'Featured Meal',
+    details: 'Served with french fries + drink',
+    choice:
+      'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...',
+    rating: 2.5,
+    link: '/'
+  },
+  {
+    id: 'dish-6',
+    imgUrl: '/images/dish-6.jpg',
+    label: 'Featured Meal',
+    details: 'Served with french fries + drink',
+    choice:
+      'Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...',
+    rating: 5,
+    link: '/'
+  }
+];
+
+export const chefs = [
+  {
+    id: 'gregory-flores',
+    name: 'Gregory Flores',
+    position: 'Chef of the cold',
+    imgUrl: '/images/chef-1.jpg',
+    dishes: ['/images/chef-1-dish-1.jpg', '/images/chef-1-dish-2.jpg', '/images/chef-1-dish-3.jpg']
+  },
+  {
+    id: 'annette-cooper',
+    name: 'Annette Cooper',
+    position: 'Chef of the hot',
+    imgUrl: '/images/chef-2.jpg',
+    dishes: ['/images/chef-2-dish-1.jpg', '/images/chef-2-dish-2.jpg', '/images/chef-2-dish-3.jpg']
+  },
+  {
+    id: 'greg-fox',
+    name: 'Greg Fox',
+    position: 'Сhef macro kitchen',
+    imgUrl: '/images/chef-3.jpg',
+    dishes: ['/images/chef-3-dish-1.jpg', '/images/chef-3-dish-2.jpg', '/images/chef-3-dish-3.jpg']
+  }
+];

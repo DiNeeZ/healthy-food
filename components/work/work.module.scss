@@ -9,9 +9,27 @@
 }
 
 .item {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 3.75rem 1.5rem;
   background-color: $dark-gray-color;
   border-radius: 0.375rem;
+  transition: all 0.15s ease-in-out;
+
+  @include hover {
+    &:hover {
+      background-color: $primary-color;
+
+      .title {
+        color: #191919;
+        &::after {
+          background-color: currentColor;
+        }
+      }
+
+      .text {
+        color: #191919;
+      }
+    }
+  }
 }
 
 .title {
@@ -52,5 +70,9 @@
   .work {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+  }
+
+  .item {
+    padding: 1.5rem;
   }
 }

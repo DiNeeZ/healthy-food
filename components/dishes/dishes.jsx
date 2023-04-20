@@ -1,4 +1,8 @@
 import { SectionWrapper } from '../ui/section-wrapper';
+
+import { MealCard } from '../ui/meal-card';
+
+import { dishes } from '@/data';
 import styles from './dishes.module.scss';
 
 const Dishes = () => {
@@ -8,7 +12,11 @@ const Dishes = () => {
         label: 'Dish Of The Day',
         backgroundText: 'dishes'
       }}>
-      <div>dishes</div>
+      <div className={styles.dishes}>
+        {dishes.map((meal) => (
+          <MealCard key={meal.id} meal={meal} />
+        ))}
+      </div>
     </SectionWrapper>
   );
 };
