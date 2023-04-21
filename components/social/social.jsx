@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Scrollbars from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 import { SectionWrapper } from '../ui/section-wrapper';
 import { social } from '@/data';
@@ -27,7 +27,7 @@ const Social = () => {
                   Follow Us
                 </Link>
               </div>
-              <Scrollbars>
+              <Scrollbars style={{ width: '100%', height: '240px' }}>
                 <div className={styles.body}>
                   <span className={styles.date}>{item.date}</span>
                   <p className={styles.text}>{item.text}</p>
