@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import { Scrollbars } from 'react-custom-scrollbars';
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 
 import { SectionWrapper } from '../ui/section-wrapper';
 import { social } from '@/data';
 
+import 'overlayscrollbars/overlayscrollbars.css';
 import styles from './social.module.scss';
 
 const Social = () => {
@@ -20,20 +21,24 @@ const Social = () => {
             <li key={item.id} className={styles.social}>
               <div className={styles.header}>
                 <Link href={item.href} className={styles.logo}>
-                  <Icon className={styles.icon} />
+                  <div className={styles.iconWrapper}>
+                    <Icon size={18} className={styles.icon} />
+                  </div>
                   <span className={styles.logoText}>{item.label}</span>
                 </Link>
                 <Link href={item.href} className={styles.button}>
                   Follow Us
                 </Link>
               </div>
-              <Scrollbars style={{ width: '100%', height: '240px' }}>
-                <div className={styles.body}>
-                  <span className={styles.date}>{item.date}</span>
-                  <p className={styles.text}>{item.text}</p>
-                  <span className={styles.author}>@{item.author}</span>
-                </div>
-              </Scrollbars>
+              <OverlayScrollbarsComponent
+                element='div'
+                options={{ scrollbars: { autoHide: 'never', theme: 'os-theme-light' } }}
+                className={styles.body}
+                defer>
+                <span className={styles.date}>{item.date}</span>
+                <p className={styles.text}>{item.text}</p>
+                <span className={styles.author}>@{item.author}</span>
+              </OverlayScrollbarsComponent>
             </li>
           );
         })}

@@ -19,32 +19,103 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #737373;
   border-bottom: 1px solid rgba($secondary-color, 0.5);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: inherit;
+
+  @include hover {
+    &:hover {
+      .iconWrapper {
+        background-color: rgba(#737373, 0.2);
+        transition: background-color 0.15s ease-in-out;
+      }
+
+      .logoText {
+        font-size: 0.875rem;
+        line-height: 1.875rem;
+        text-transform: capitalize;
+        color: #737373;
+        transition: color 0.15s ease-in-out;
+      }
+    }
+  }
+}
+
+.iconWrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(#737373, 0.5);
+  border-radius: 50%;
+}
+
+.logoText {
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  text-transform: capitalize;
+  color: #bfbfbf;
+}
+
+.button {
+  padding: 0.875rem 1.1875rem;
+  font-weight: 900;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  border: 2px solid rgba(#737373, 0.5);
+  border-radius: 1.875rem;
+
+  @include hover {
+    &:hover {
+      background-color: rgba(#737373, 0.2);
+      transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+      color: #737373;
+    }
+  }
+}
+
 .body {
-  margin: 0;
-  padding: 1.25rem 0.75rem 1.25rem 1.875rem;
+  margin: 0.5rem 0.25rem;
+  padding: 0.75rem 1.85rem;
+  max-height: 240px;
+  overflow-y: scroll;
 }
 
 .date {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
   color: #737373;
 }
 
 .text {
   margin: 0;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .author {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #34c759;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  color: $primary-color;
+}
+
+@include tablet {
+  .socials {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
