@@ -3,6 +3,9 @@ $content-width: 1110px;
 $container-offset: 16px;
 $container-width: calc($content-width + ($container-offset * 2));
 
+$border-radius: 0.375rem;
+$gap: 1.875rem;
+
 // colors
 $primary-color: #34c759;
 $secondary-color: #fff;

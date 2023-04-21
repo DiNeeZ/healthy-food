@@ -50,7 +50,7 @@
   object-fit: cover;
   object-position: center;
   background-color: #fff;
-  border-radius: 0.375rem;
+  border-radius: $border-radius;
 
   &:first-child {
     grid-column: span 2;

@@ -1,0 +1,200 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.recipes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $gap;
+}
+
+.card {
+  position: relative;
+  padding: 1.5rem;
+  color: $secondary-color;
+  background-color: $dark-gray-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background-color 0.15s ease-in-out;
+  }
+
+  @include hover {
+    &:hover {
+      color: $dark-gray-color;
+
+      &::after {
+        background-color: $primary-color;
+      }
+
+      .badge {
+        color: $secondary-color;
+        background-color: #000;
+        transition: all 0.15 ease-in-out;
+      }
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  font-weight: 900;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  background-color: rgba(#000, 0.6);
+  border-radius: $border-radius;
+}
+
+.text {
+  margin: 0;
+  line-height: 1.875rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.chef {
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+
+  span {
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+}
+
+@include for-desktop {
+  .recipes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+
+  .card {
+    &:not(:first-child) {
+      .chef {
+        display: none;
+      }
+    }
+
+    &:first-child {
+      grid-row: span 3;
+
+      .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 2.25rem 0;
+      }
+
+      .top {
+        flex-direction: column;
+        gap: 4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .text {
+        margin: 0 0 2.8rem 0;
+        max-width: 20rem;
+        order: initial;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+      }
+    }
+
+    @include hover {
+      &:hover {
+        .link {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .text {
+    margin-bottom: 0.625rem;
+    order: -1;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .link {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease-in-out;
+  }
+}

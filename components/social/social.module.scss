@@ -1,0 +1,50 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.socials {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+}
+
+.social {
+  flex-grow: 1;
+  background-color: rgba($secondary-color, 0.1);
+  border-radius: $border-radius;
+}
+
+.header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba($secondary-color, 0.5);
+}
+
+.body {
+  margin: 0;
+  padding: 1.25rem 0.75rem 1.25rem 1.875rem;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #737373;
+}
+
+.text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #34c759;
+}

@@ -2,38 +2,6 @@ import { Logo } from '../ui/logo';
 import { Info } from '../ui/info';
 import styles from './footer.module.scss';
 
-const renderElement = (type, value) => {
-  switch (type) {
-    case 'text':
-      return <div className={styles.label}>{value}</div>;
-
-    case 'address':
-      return <address className={styles.label}>{value}</address>;
-    case 'tel':
-      const regex = /[()\s]/g;
-      return (
-        <a href={`tel:${value.replace(regex, '')}`} className={styles.label}>
-          {value}
-        </a>
-      );
-
-    default:
-      break;
-  }
-};
-
-const FooterInfoItem = ({ item }) => {
-  const Icon = item.icon;
-
-  return (
-    <>
-      <Icon />
-      {renderElement(item.type, item.label)}
-      <small>{item.sub}</small>
-    </>
-  );
-};
-
 const Footer = () => {
   return (
     <footer className={styles.footer}>

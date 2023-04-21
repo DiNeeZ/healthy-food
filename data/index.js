@@ -1,4 +1,11 @@
-import { FaClock, FaPhoneAlt, FaLocationArrow } from 'react-icons/fa';
+import {
+  FaClock,
+  FaPhoneAlt,
+  FaLocationArrow,
+  FaTwitter,
+  FaInstagram,
+  FaFacebookF
+} from 'react-icons/fa';
 
 export const navLinks = [
   {
@@ -177,5 +184,74 @@ export const chefs = [
     position: 'Сhef macro kitchen',
     imgUrl: '/images/chef-3.jpg',
     dishes: ['/images/chef-3-dish-1.jpg', '/images/chef-3-dish-2.jpg', '/images/chef-3-dish-3.jpg']
+  }
+];
+
+export const recipes = [
+  {
+    bgImg: '/images/recipe-1.jpg',
+    tag: 'breakfast',
+    date: new Date('05 Jul 2016'),
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    chef: 'Jason Keller',
+    views: 275,
+    comments: 12
+  },
+  {
+    bgImg: '/images/recipe-2.jpg',
+    tag: 'lunch',
+    date: new Date('07 Jan 2016'),
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut',
+    chef: 'Gregory Flores',
+    views: 275,
+    comments: 12
+  },
+  {
+    bgImg: '/images/recipe-3.jpg',
+    tag: 'dinner',
+    date: new Date('05 August 2017'),
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    chef: 'Annette Cooper',
+    views: 275,
+    comments: 12
+  },
+  {
+    bgImg: '/images/recipe-4.jpg',
+    tag: 'sweets',
+    date: new Date('12 April 2016'),
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+    chef: 'Greg Fox',
+    views: 275,
+    comments: 12
+  }
+];
+
+export const social = [
+  {
+    id: 'social-twitter',
+    label: 'twitter',
+    href: 'https://twitter.com/',
+    icon: FaTwitter,
+    date: '24 Jun at 16:20 pm',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing',
+    author: 'DennisFerguson'
+  },
+  {
+    id: 'social-instagram',
+    label: 'instagram',
+    href: 'https://instagram.com/',
+    icon: FaInstagram,
+    date: '24 Jun at 16:20 pm',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing',
+    author: 'RobertDeNiro'
+  },
+  {
+    id: 'social-facebook',
+    label: 'facebook',
+    href: 'https://facebook.com/',
+    icon: FaFacebookF,
+    date: '24 Jun at 16:20 pm',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing',
+    author: 'Karpenter'
   }
 ];
